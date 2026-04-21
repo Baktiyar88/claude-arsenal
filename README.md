@@ -14,8 +14,11 @@
 ### «Хочу превратить кодовую базу в граф знаний»
 → [graphify](tools/README.md) — AST анализ 25+ языков + MCP + семантический поиск
 
-### «Хочу оркестратор для бэкенда / фронтенда»
-→ [orchestrators/](orchestrators/README.md) — многоагентные системы (пока пусто, добавляй!)
+### «Хочу оркестратор для Node.js/TypeScript/Supabase бэка»
+→ [claude-code-orchestrator-kit](orchestrators/README.md) — 49 агентов + 42 скилла + SpecKit, production-выжимка реального проекта
+
+### «Хочу оркестратор для Django/DRF/PostgreSQL бэка»
+→ [claude-code-orchestrator-python](orchestrators/README.md) — 48 агентов + 54+ скиллов, заточено под Django стек
 
 ### «Хочу точечного специалиста (planner, reviewer, architect)»
 → [agents-skills/](agents-skills/README.md)
@@ -33,7 +36,7 @@
 | Папка | Что там | Примеры |
 |---|---|---|
 | [frameworks/](frameworks/) | Методологии "всё-в-одном" | superpowers |
-| [orchestrators/](orchestrators/) | Многоагентные системы | _пусто_ |
+| [orchestrators/](orchestrators/) | Многоагентные системы | claude-code-orchestrator-kit, claude-code-orchestrator-python |
 | [agents-skills/](agents-skills/) | Отдельные агенты и скиллы | _пусто_ |
 | [tools/](tools/) | MCP серверы, утилиты | graphify |
 | [automation/](automation/) | Хуки, промпты, шаблоны CLAUDE.md | _пусто_ |
