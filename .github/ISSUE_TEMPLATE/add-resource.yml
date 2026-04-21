@@ -1,0 +1,79 @@
+name: Добавить ресурс
+description: Предложи репо, инструмент, агента или гайд в claude-arsenal
+title: "[Resource] <название>"
+labels: ["new-resource"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Спасибо! Заполни форму — maintainer перенесёт карточку в нужную папку.
+
+  - type: input
+    id: repo-url
+    attributes:
+      label: Ссылка на репо или ресурс
+      placeholder: https://github.com/user/repo
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Категория
+      description: К какой папке относится ресурс?
+      options:
+        - frameworks (методология всё-в-одном)
+        - orchestrators (многоагентная система)
+        - agents-skills (один агент или скилл)
+        - tools (MCP сервер, утилита)
+        - automation (хук, шаблон, промпт)
+        - docs (гайд, шпаргалка)
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-gives
+    attributes:
+      label: Что даёт
+      description: Одно предложение про полезность.
+      placeholder: "Полный workflow разработки — брейншторм, планирование, TDD, код-ревью"
+    validations:
+      required: true
+
+  - type: textarea
+    id: when-use
+    attributes:
+      label: Когда брать
+      description: Одно предложение про use-case.
+      placeholder: "Если хочешь отстроенный процесс, а не собирать всё с нуля"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: domain
+    attributes:
+      label: Для чего лучше
+      multiple: true
+      options:
+        - универсал
+        - backend
+        - frontend
+        - mobile
+        - data
+    validations:
+      required: true
+
+  - type: input
+    id: install
+    attributes:
+      label: Установка
+      description: Команда клона или ссылка на инструкцию.
+      placeholder: "git clone https://github.com/user/repo ~/.claude/plugins/"
+
+  - type: input
+    id: author
+    attributes:
+      label: Автор (GitHub username)
+      placeholder: "@username"
+    validations:
+      required: true
