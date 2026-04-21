@@ -13,3 +13,6 @@ desktop.ini
 # Temp files
 *.tmp
 *.log
+
+# Local Claude Code settings (personal, not shared)
+.claude/
