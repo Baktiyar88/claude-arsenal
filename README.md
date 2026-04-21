@@ -14,11 +14,11 @@
 ### «Хочу превратить кодовую базу в граф знаний»
 → [graphify](tools/README.md) — AST анализ 25+ языков + MCP + семантический поиск
 
-### «Хочу оркестратор для Node.js/TypeScript/Supabase бэка»
-→ [claude-code-orchestrator-kit](orchestrators/README.md) — 49 агентов + 42 скилла + SpecKit, production-выжимка реального проекта
+### «Хочу команду Claude-агентов под мой Node.js/TypeScript/Supabase бэк»
+→ [claude-code-orchestrator-kit](orchestrators/README.md) — готовый набор из 49 специализированных агентов (поиск багов, безопасность, код-ревью, архитектор) работающих одновременно под управлением главного Claude
 
-### «Хочу оркестратор для Django/DRF/PostgreSQL бэка»
-→ [claude-code-orchestrator-python](orchestrators/README.md) — 48 агентов + 54+ скиллов, заточено под Django стек
+### «Хочу команду Claude-агентов под мой Django/DRF/PostgreSQL бэк»
+→ [claude-code-orchestrator-python](orchestrators/README.md) — то же самое, но под Django-стэк (48 агентов + 54+ скиллов)
 
 ### «Хочу точечного специалиста (planner, reviewer, architect)»
 → [agents-skills/](agents-skills/README.md)
@@ -36,7 +36,7 @@
 | Папка | Что там | Примеры |
 |---|---|---|
 | [frameworks/](frameworks/) | Методологии "всё-в-одном" | superpowers |
-| [orchestrators/](orchestrators/) | Многоагентные системы | claude-code-orchestrator-kit, claude-code-orchestrator-python |
+| [orchestrators/](orchestrators/) | Команды агентов (многоагентные системы) | claude-code-orchestrator-kit, claude-code-orchestrator-python |
 | [agents-skills/](agents-skills/) | Отдельные агенты и скиллы | _пусто_ |
 | [tools/](tools/) | MCP серверы, утилиты | graphify |
 | [automation/](automation/) | Хуки, промпты, шаблоны CLAUDE.md | _пусто_ |
